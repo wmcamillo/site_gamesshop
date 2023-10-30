@@ -1,0 +1,144 @@
+* {
+    margin: 0;                    /*essas 3 linhas configuram o reset da página*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, 
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', sans-serif; /*pego do google fonts precisa adiconar no html tb*/
+    font-weight: normal;
+}
+
+body, input, textarea { /* aplica essa fonte tb para input e text area*/
+    font-family: 'Roboto', sans-serif; /*tudo que não foi especificado recebe essa fonte*/
+}
+
+header{
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    color: #ecf0f1 ; /*esse color não funciona no li precisa espeficiar o a, assim como feito abaixo*/
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none; /*remove o sublinhado do texto*/
+} 
+
+/* criou-se um container para poder mexer com toda a parte do logo*/
+
+.container {
+    max-width: 1280px; 
+    width: 100%;  /*vai ocupadar 100% da largura até chegar em 1280, se passa desse valor ele não usa mais nada ficando centralizado na tela*/
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex; 
+    align-items: center;  /*centraliza na vertical */
+    justify-content: space-between; /* separa o conteudo deixando o máximo valor entre eles respeitando a largura*/
+}
+
+.brands-list img {
+    height: 24px; /*todas as imagens da lista brands devem ter 24px*/ 
+    margin-right: 8px;
+}
+
+.brands-list li {
+    display: inline; /*coloca o conteudo lado a lado*/
+}
+
+section .container {
+    align-items: flex-start; /*esse regra sobrecreveu a da linha 50*/
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color:#182c61 ;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none; /* retiras uns pequenos traços que ficaram nas logos*/
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;  /*alinha os forms um abaixo do outro*/
+    width: 320px;    /*largura máxima dos forms 320px*/ 
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+textarea {
+    resize: none; /*desabilita a modificação manual do text area */
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color:#182c61;  
+    color: #ecf0f1; 
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {  /*quando passar o cursor em cima do botão ele roda o código abaixo*/
+    background-color:#6080da;  
+}
+
+input:focus, textarea:focus {
+    outline-color:#182c61 ;
+}
+
+footer {
+    background-color:#182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
